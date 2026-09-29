@@ -10,22 +10,24 @@
     <!-- ===== Header / Navbar ===== -->
     <header class="site-header">
       <div class="container header-inner">
+        <a href="#hero" class="logo">Vintage Barbershop</a>
+        
         <nav class="nav" id="nav">
           <a href="#features" class="nav-link">Services</a>
           <a href="#cta" class="nav-link">Book</a>
           <a href="#footer" class="nav-link">Contact</a>
         </nav>
         <!-- Mobile Menu Button (for later JS) -->
-        <button class="menu-btn" id="menuBtn" aria-label="Open menu"></button>
+        <button class="menu-btn" id="menubtn" aria-label="Open menu">☰</button>
       </div>
       <!-- Mobile Menu Panel (for later JS) -->
       <div class="mobile-menu" id="mobilemenu">
         <a href="#features" class="mobile-link">Services</a>
         <a href="#cta" class="mobile-link">Book</a>
-        <a href="#footer" class="mobile=link">Contact</a>
+        <a href="#footer" class="mobile-link">Contact</a>
       </div>
     </header>
-    <!-- ===== Hero Section ===== -->
+    <!-- Hero Section -->
      <section class="hero" id="hero">
       <div class="container hero-inner">
         <div class="hero-text">
@@ -37,21 +39,121 @@
           <div class="hero-media">
             <a href="#cta" class="btn btn-primary" id="bookbtn"
             >Book an appointment</a>
-            >
             <a href="#features" class="btn btn-secondary" id="servicesbtn"
             >View Services</a>
-            >
-            </div>
-            </div>
-            <!-- Replace replace src with your provided hero image -->
-             <img
-             src="assets/hero_logo/hero_logo/hero.jpg"
-             alt="Barbershop hero"
-             class="hero-img"
-             id="heroimg"
-             />
           </div>
         </div>
+        <!-- Replace src with your provided hero image -->
+        <img
+          src="assets/hero_logo/hero_logo/hero.jpg"
+          alt="Barbershop hero"
+          class="hero-img"
+          id="heroimg"
+        />
+      </div>
      </section>
+        </div>
+     </section>
+     <!-- ===== Features / Services Section ===== -->
+      <section class="features" id="features">
+        <div class="container">
+          <h2 class="section-title" id="featuresTitle">Our Services</h2>
+          <p class="section-subtitle" id="featuresSubtitle">
+            Quality grooming services for the modern gentleman.
+          </p>
+          <div class="features-grid" id="featuresGrid">
+            <!-- Feature Card 1 -->
+            <article class="feature-card">
+              <img
+                src="assets/Images (1)/Images/feature-1.jpg"
+                alt="Classic haircut"
+                class="feature-img"
+              /> 
+              <h3 class="feature-title">Haircuts</h3>
+              <p class="feature-description">
+                Precision haircuts tailored to your style.
+              </p>
+            </article>
+            <!-- Feature Card 2 -->
+            <article class="feature-card">
+              <img
+                src="assets/Images (1)/Images/feature-2.jpg"
+                alt="Beard trim"
+                class="feature-img"
+              /> 
+              <h3 class="feature-title">Beard Trims</h3>
+              <p class="feature-text">
+                Expert beard shaping and maintenance.
+              </p>
+            </article>
+            <!-- Feature Card 3 -->
+            <article class="feature-card">
+              <img
+                src="assets/Images (1)/Images/feature-3.jpg"
+                alt="Straight razor shave"
+                class="feature-img"
+              /> 
+              <h3 class="feature-title">Shaves</h3>
+              <p class="feature-text">
+                Traditional straight-razor shaves for a clean look.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Call to Action Section ===== -->
+      <section class="cta" id="cta">
+        <div class="container cta-inner">
+          <div class="cta-text">
+          <h2 id="ctaHeading">Ready for a fresh look</h2>
+          <p id="ctaText">
+            walk-ins welcome, appointments recommended. book today and leave looking sharp.
+          </p>
+          </div>
+          <div class="cta-actions">
+            <button class="btn btn-primary" id="ctaBtn">Book Now</button>
+            <button class="btn btn-secondary" id="ctaSecondaryBtn">Call Us</button>
+          </div>
+          </div>
+      </section>
+      <!-- ===== Footer Section ===== -->
+       <footer class="site-footer" id="footer">
+         <div class="container footer-inner">
+          <div class="footer-col">
+            <h3 class="footer-title">Vintage Barbershop</h3>
+            <p class="footer-description">old-school grooming with a modern touch.</p>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Hours</h4>
+            <ul class="footer-list" id="hourslist">
+              <li>Mon-Fri: 9am - 7pm</li>
+              <li>Sat: 9am - 5pm</li>
+              <li>Sun: Closed</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Contact</h4>
+            <ul class="footer-list">
+              <li>
+                <a href="a" class="footer-link" id="addresslink">123 Main St, Anytown, USA</a>
+              </li>
+              <li>
+                <a href="a" class="footer-link" id="phonelink">(555) 123-4567</a>
+              </li>
+              <li>
+                <a href="a" class="footer-link" id="emaillink">info@vintagebarbershop.com</a>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container footer-bottom">
+          <p class="copyright">
+            <span id="year"></span> &copy; 2026 Vintage Barbershop. All rights reserved.
+          </p>
+        </div>
+       </footer>
+       <!-- JS -->
+        <script src="js/main.js"></script>
   </body>
 </html>
